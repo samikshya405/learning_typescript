@@ -1,6 +1,6 @@
 .input{
     display: flex;
-    width: 90%;
+    width: 95%;
     position: relative;
     align-items: center;
 }
@@ -44,23 +44,51 @@
     transform: scale(0.8);
     box-shadow: 0 0 5px black;
 }
+.container{
+    display: flex;
+    width: 95%;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.remove{
+    background-color: rgb(235,103,80) !important;
+}
+.dragActive{
+    background-color: rgb(0,221,236) !important;
+}
+.dragComplete{
+    background-color: rgb(255,38,0) !important;
 
+}
 .todos{
     display: flex;
     justify-content: space-evenly;
-    width: 90%;
-    flex-wrap: wrap;
+    width: 47.5%;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgb(50, 195, 205);
+    /* flex-wrap: wrap; */
 }
 
+.todos-heading{
+    color: white;
+    font-size: 30px;
+}
 .todos-single{
     display: flex;
-    width: 29.5%;
+    /* width: 29.5%; */
     border-radius: 5px;
     padding: 20px;
     margin-top: 15px;
     background-color: orange;
+    transition: 0.2s;
 }
-
+.todos-single:hover{
+    box-shadow: 0 0 5px black;
+    transform: scale(1.03);
+}
 .todos-single-text{
     flex: 1;
     padding: 5px;
