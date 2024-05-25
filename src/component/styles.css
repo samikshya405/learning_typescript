@@ -105,3 +105,15 @@
     font-size: 25px;
     cursor: pointer;
 }
+
+@media screen and (max-width:768px) {
+    .container{
+        flex-direction: column;
+    }
+    .todos{
+        width: 100%;
+        gap: 10px;
+    }
+
+    
+}
